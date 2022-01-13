@@ -1,5 +1,6 @@
 /**
   백준 14502번 - 연구소
+  https://www.acmicpc.net/problem/14502
   
   알고리즘
     1. 그래프 이론
