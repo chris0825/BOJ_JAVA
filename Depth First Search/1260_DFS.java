@@ -30,26 +30,7 @@ public class Main {
             node[v2][v1] = true;
         }
         bw.write(dfs(sV, node)+"\n");
-        bw.write(bfs(sV, node));
         bw.close();
-    }
-    static String bfs(int v, boolean node[][]) {
-        StringBuilder sb = new StringBuilder();
-        Queue<Integer> queue = new LinkedList<>();
-        boolean visited[] = new boolean[n+1];
-        queue.add(v);
-        visited[v] = true;
-        int idx;
-        while(!queue.isEmpty()) {
-            idx = queue.remove();
-            sb.append(idx+" ");
-            for(int i=1; i<node.length; i++) 
-                if(node[idx][i] && !visited[i]) {
-                    queue.add(i);
-                    visited[i] = true;
-                }
-        }
-        return sb.toString();
     }
     static String dfs(int v, boolean node[][]) {
         StringBuilder sb = new StringBuilder();
