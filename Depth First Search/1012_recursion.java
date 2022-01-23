@@ -1,5 +1,5 @@
 /**
-  백준 1012번 - 유기농 배추
+  백준 1012번 - 유기농 배추(Recursion Ver.)
   https://www.acmicpc.net/problem/1012
   
   알고리즘 분류
