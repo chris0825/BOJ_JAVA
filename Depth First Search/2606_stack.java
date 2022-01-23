@@ -35,14 +35,12 @@ public class Main {
         int comN, cnt = 0;
         while(!stack.isEmpty()) {
             comN = stack.pop();
-            visited[comN] = true;
-            for(int i=2; i<=num; i++){
+            for(int i=2; i<=num; i++)
                 if(computer[comN][i] && !visited[i]) {
                     visited[i] = true;
                     cnt++;
                     stack.add(i);
                 }
-            }
         }
         return cnt;
     }
