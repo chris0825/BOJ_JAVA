@@ -12,11 +12,13 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
+    static int cnt=0, num;
+    static boolean computer[][], visited[];
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int num = Integer.parseInt(br.readLine());
+        num = Integer.parseInt(br.readLine());
         int node = Integer.parseInt(br.readLine());
-        boolean computer[][] = new boolean[num+1][num+1];
+        computer = new boolean[num+1][num+1];
         int col, row;
         while(node-- > 0) {
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -25,21 +27,17 @@ public class Main {
             computer[col][row] = true;
             computer[row][col] = true;
         }
-        boolean visit[] = new boolean[num+1];
-        visit[1] = true;
-        virus(computer, visit, num, 1);
-        int cnt=0;
-        for(int i=2; i<=num; i++)
-            if(visit[i])
-                cnt++;
+        visited = new boolean[num+1];
+        visited[1] = true;
+        virus(1);
         System.out.println(cnt);
     }
-    static void virus(boolean computer[][], boolean visit[], int num, int idx) {
-        for(int i=1; i<=num; i++){
-            if(computer[idx][i] && !visit[i]) {
-                visit[i] = true;
-                virus(computer, visit, num, i);
+    static void virus(int idx) {
+        for(int i=2; i<=num; i++)
+            if(computer[idx][i] && !visited[i]) {
+                visited[i] = true;
+                cnt++;
+                virus(i);
             }
-        }
     }
 }
