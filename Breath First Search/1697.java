@@ -11,7 +11,6 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-    static int ans = Integer.MAX_VALUE, second[] = new int[100001];
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -22,8 +21,9 @@ public class Main {
     static int hideAseek(int start, int end) {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(start);
+        int second[] = new int[100001];
         second[start] = 1;
-        int temp = end;
+        int temp;
         while(!queue.isEmpty()) {
             temp = queue.remove();
             if(temp-1 >= 0 && second[temp-1] == 0) {
