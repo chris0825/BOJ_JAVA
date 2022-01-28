@@ -23,11 +23,9 @@ public class Main {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(start);
         second[start] = 1;
-        int temp;
+        int temp = end;
         while(!queue.isEmpty()) {
             temp = queue.remove();
-            if(temp == end)
-                return second[temp];
             if(temp-1 >= 0 && second[temp-1] == 0) {
                 queue.add(temp-1);
                 second[temp-1] = second[temp] + 1;
@@ -40,7 +38,9 @@ public class Main {
                 queue.add(temp+1);
                 second[temp+1] = second[temp] + 1;
             }
+            if(second[end] != 0)
+                break;
         }
-        return -1;
+        return second[end];
     }
 }
