@@ -16,7 +16,7 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int subin = Integer.parseInt(st.nextToken());
         int sister = Integer.parseInt(st.nextToken());
-        System.out.println(hideAseek(subin, sister)-1);
+        System.out.println(hideAseek(subin, sister));
     }
     static int hideAseek(int start, int end) {
         Queue<Integer> queue = new LinkedList<>();
@@ -41,6 +41,6 @@ public class Main {
             if(second[end] != 0)
                 break;
         }
-        return second[end];
+        return second[end]-1;
     }
 }
