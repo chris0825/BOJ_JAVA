@@ -9,25 +9,19 @@
 import java.io.*;
 
 public class Main {
-    static long sq[] = new long[101];
+    static long dp[] = new long[101];
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int t = Integer.parseInt(br.readLine());
+        dp[1] = dp[2] = dp[3] = 1;
         while(t-- > 0)
             bw.write(wave(Integer.parseInt(br.readLine()))+"\n");
         bw.close();
     }
     static long wave(int n) {
-        if(sq[n] != 0)
-            return sq[n];
-        else {
-            if(n <= 3)
-                return 1;
-            else {
-                sq[n] = wave(n-2) + wave(n-3);
-                return sq[n];
-            }
-        }
+        if(dp[n] == 0)
+            dp[n] = wave(n-2) + wave(n-3);
+        return dp[n];
     }
 }
