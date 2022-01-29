@@ -13,15 +13,15 @@ public class Main {
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        int t = Integer.parseInt(br.readLine());
-        dp[1] = dp[2] = dp[3] = 1;
+        int t = Integer.parseInt(br.readLine()); // 질문할 개수
+        dp[1] = dp[2] = dp[3] = 1; // f(x) = f(x-3) + f(x-2)이므로 초기 값 1~3까지 우선 입력
         while(t-- > 0)
-            bw.write(wave(Integer.parseInt(br.readLine()))+"\n");
+            bw.write(wave(Integer.parseInt(br.readLine()))+"\n"); // 결과 출력
         bw.close();
     }
     static long wave(int n) {
-        if(dp[n] == 0)
-            dp[n] = wave(n-2) + wave(n-3);
-        return dp[n];
+        if(dp[n] == 0) // 아직 탐색이 안된 경우
+            dp[n] = wave(n-2) + wave(n-3); // 점화식
+        return dp[n]; // 배열에 저장된 값 반환
     }
 }
