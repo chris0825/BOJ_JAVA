@@ -21,7 +21,7 @@ public class Main {
     }
     static long wave(int n) {
         if(dp[n] == 0) // 아직 탐색이 안된 경우
-            dp[n] = wave(n-2) + wave(n-3); // 점화식
+            dp[n] = wave(n-2) + wave(n-3); // 점화식, 계산하면서 배열에 저장하여 나중에 연산없이 호출하여 사용할 수 있도록
         return dp[n]; // 배열에 저장된 값 반환
     }
 }
