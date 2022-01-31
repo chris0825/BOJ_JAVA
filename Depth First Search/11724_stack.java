@@ -1,3 +1,13 @@
+/**
+  백준 11724번 - 연결 요소의 개수 (Recursion Ver.)
+  https://www.acmicpc.net/problem/11724
+  
+  알고리즘 분류
+    1. 그래프 이론
+    2. 그래프 탐색
+    3. 너비 우선 탐색
+    4. 깊이 우선 탐색
+*/
 import java.util.*;
 import java.io.*;
 
