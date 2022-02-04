@@ -1,6 +1,4 @@
-# BOJ_JAVA
-
-백준 온라인저지([acmicpc.net](https://www.acmicpc.net))  
+BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))  
 ============================
 
 <details open> <summary> 접기 / 펼치기 </summary>
