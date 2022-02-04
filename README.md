@@ -1,7 +1,7 @@
 BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))  
 ============================
 
-<details open> <summary> 접기 / 펼치기 </summary>
+<details open> <summary> Class 1 </summary>
 
 | 번호 | 문제 | 난이도 | 번호 | 문제 | 코드 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
