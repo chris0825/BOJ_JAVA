@@ -19,7 +19,7 @@ public class Main {
         while(n-- > 0) {
             command = br.readLine();
             if(command.equals("0"))
-                bw.write(minHeap.isEmpty() ? "0\n" : minHeap.remove()+"\n");
+                bw.write((minHeap.isEmpty() ? "0" : minHeap.remove())+"\n");
             else
                 minHeap.add(Integer.parseInt(command));
         }
