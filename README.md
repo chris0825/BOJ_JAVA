@@ -1,4 +1,4 @@
-BAEKJOON_ONLINE_JUDGE ([acmicpc.net](https://www.acmicpc.net))  
+BOJ ([acmicpc.net](https://www.acmicpc.net))  
 ============================
 
 <details open> <summary> 접기 / 펼치기 </summary>
