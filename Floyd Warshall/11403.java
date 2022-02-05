@@ -27,7 +27,7 @@ public class Main {
             for(int j=0; j<num; j++)
                 for(int k=0; k<num; k++)
                     if(graph[j][k]==1 || (graph[j][i]==1  && graph[i][k]==1))
-						graph[j][k] = 1;
+			graph[j][k] = 1;
 		for(int i=0; i<num; i++) {
 		    for(int j=0; j<num; j++)
 		        bw.write(graph[i][j]+" ");
