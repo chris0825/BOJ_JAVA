@@ -1,7 +1,8 @@
 BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))  
 ============================
 
-<details open> <summary> ![rank](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG) </summary>
+![rank](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)
+<details open> <summary>  </summary>
 
 | ID | Class | Question | Code |
 |:-:|:-:|:-:|:-:|
