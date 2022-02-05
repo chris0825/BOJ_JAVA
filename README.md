@@ -21,7 +21,7 @@ BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))
 
 </details>
 
-
+![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20III.PNG)
 <details open> <summary> Bronze III </summary>
   
 | ID | Question | CLASS | Code |
@@ -29,7 +29,7 @@ BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))
 
 </details>
 
-
+![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG)
 <details open> <summary> Bronze II </summary>
   
 | ID | Question | CLASS | Code |
@@ -38,9 +38,7 @@ BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))
 
 </details>
 
-
-
-
+![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20I.PNG)
 <details open> <summary> Bronze I </summary>
   
 | ID | Question | CLASS | Code |
