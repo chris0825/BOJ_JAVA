@@ -1,7 +1,7 @@
 BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))  
 ============================
 
-<details open> <summary> 접기 / 펼 </summary>
+<details open> <summary> 접기 / 펼치기 </summary>
   
 | ID | Question | CLASS | RANK | Code |
 |:-:|:-:|:-:|:-:|:-:|
