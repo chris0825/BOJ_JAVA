@@ -10,3 +10,8 @@ BOJ_JAVA ([acmicpc.net](https://www.acmicpc.net))
 | 1002 | | [터렛](https://www.acmicpc.net/problem/1002) | [c](baekjoon/1002.c) |
 
 </details>
+<details open> <summary> Class 2 </summary>
+
+| 번호 | 난이도 | 문제 | 코드 |
+|:-:|:-:|:-:|:-:|
+</details>
