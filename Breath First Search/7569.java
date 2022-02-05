@@ -11,26 +11,25 @@ import java.util.*;
 import java.io.*;  
 
 public class Main {
+    static int tomato[][][], rSize, cSize, floor;
+    static Queue<Spot> queue = new LinkedList<>();
     public static void main(String args[]) throws IOException{  
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
         StringTokenizer size = new StringTokenizer(br.readLine());
-        int rSize = Integer.parseInt(size.nextToken());
-        int cSize = Integer.parseInt(size.nextToken());
-        int floor = Integer.parseInt(size.nextToken());
-        int tomato[][][] = new int[floor][cSize][rSize];
-        Queue<Spot> queue = new LinkedList<>();
-        for(int i=0; i<floor; i++) {
+        rSize = Integer.parseInt(size.nextToken());
+        cSize = Integer.parseInt(size.nextToken());
+        floor = Integer.parseInt(size.nextToken());
+        tomato = new int[floor][cSize][rSize];
+        for(int i=0; i<floor; i++)
             for(int j=0; j<cSize; j++) {  
                 StringTokenizer st = new StringTokenizer(br.readLine());  
-                for(int k=0; k<rSize; k++) {  
+                for(int k=0; k<rSize; k++) {
                     tomato[i][j][k] = Integer.parseInt(st.nextToken());
-                    if(tomato[i][j][k] == 1)  
+                    if(tomato[i][j][k] == 1)
                         queue.add(new Spot(i, j, k));
                 }  
             }
-        }
-        bfs(tomato, queue, floor, cSize, rSize);
-        System.out.println(ripeDay(tomato, floor, cSize, rSize)); 
+        System.out.println(bfs()); 
     } 
     static class Spot { 
         int floor;
@@ -42,18 +41,7 @@ public class Main {
             this.row = r; 
         } 
     }
-    static int ripeDay(int tomato[][][], int floor, int cSize, int rSize) {
-        int d = 0;
-        for(int i=0; i<floor; i++)
-            for(int j=0; j<cSize; j++)
-                for(int k=0; k<rSize; k++) {
-                    d = Math.max(d, tomato[i][j][k]);
-                    if(tomato[i][j][k] == 0)
-                        return -1;
-                }
-        return d-1;
-    }
-    static void bfs(int tomato[][][], Queue<Spot> queue, int floor, int cSize, int rSize) { 
+    static int bfs() { 
         Spot s; 
         while(!queue.isEmpty()) {
             s = queue.remove(); 
@@ -81,6 +69,18 @@ public class Main {
                 queue.add(new Spot(s.floor, s.col, s.row-1)); 
                 tomato[s.floor][s.col][s.row-1] = tomato[s.floor][s.col][s.row]+1;
             } 
-        } 
-    } 
+        }
+        return ripeDay();
+    }
+    static int ripeDay() {
+        int d = 0;
+        for(int i=0; i<floor; i++)
+            for(int j=0; j<cSize; j++)
+                for(int k=0; k<rSize; k++) {
+                    d = Math.max(d, tomato[i][j][k]);
+                    if(tomato[i][j][k] == 0)
+                        return -1;
+                }
+        return d-1;
+    }
 }
