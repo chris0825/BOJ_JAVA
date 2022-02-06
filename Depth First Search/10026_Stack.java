@@ -1,5 +1,5 @@
 /**
-  백준 10026번 - 적록색약 (Recursion VER.)
+  백준 10026번 - 적록색약 (Stack VER.)
   https://www.acmicpc.net/problem/10026﻿
   
   알고리즘 분류
