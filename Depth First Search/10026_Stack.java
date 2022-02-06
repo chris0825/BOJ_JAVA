@@ -55,15 +55,22 @@ public class Main {
         Spot s;
         while(!stack.isEmpty()) {
             s = stack.pop();
-            board[s.r][s.c] = "0";
-            if(n > s.r+1 && board[s.r+1][s.c].equals(color))
+            if(n > s.r+1 && board[s.r+1][s.c].equals(color)) {
                 stack.add(new Spot(s.r+1, s.c));
-            if(0 <= s.r-1 && board[s.r-1][s.c].equals(color))
+                board[s.r+1][s.c] = "0";
+            }
+            if(0 <= s.r-1 && board[s.r-1][s.c].equals(color)) {
                 stack.add(new Spot(s.r-1, s.c));
-            if(n > s.c+1 && board[s.r][s.c+1].equals(color))
+                board[s.r-1][s.c] = "0";
+            }
+            if(n > s.c+1 && board[s.r][s.c+1].equals(color)) {
                 stack.add(new Spot(s.r, s.c+1));
-            if(0 <= s.c-1 && board[s.r][s.c-1].equals(color))
+                board[s.r][s.c+1] = "0";
+            }
+            if(0 <= s.c-1 && board[s.r][s.c-1].equals(color)) {
                 stack.add(new Spot(s.r, s.c-1));
+                board[s.r][s.c-1] = "0";
+            }
         }
     }
 }
