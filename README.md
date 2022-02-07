@@ -5,7 +5,7 @@
   
 | ID | Question | CLASS | RANK | Code |
 |:-:|:-:|:-:|:-|:-:|
-| 1000 | [A+B](https://www.acmicpc.net/problem/1000) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG) | [Java](https://github.com/chris0825/BOJ_JAVA/blob/main/Math/1000.java) |
+| 1000 | [A+B](https://www.acmicpc.net/problem/1000) | [1](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [Java](https://github.com/chris0825/BOJ_JAVA/blob/main/Math/1000.java) |
 | 1001 | [A-B](https://www.acmicpc.net/problem/1001) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG) | [Java] |
 | 1008 | [A/B](https://www.acmicpc.net/problem/1008) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20IV.PNG) | [Java] |
 | 1018 | [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | [2](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20V.PNG) | [Java] |
