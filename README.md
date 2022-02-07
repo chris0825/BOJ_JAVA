@@ -9,6 +9,7 @@
 | 1001 | [A-B](https://www.acmicpc.net/problem/1001) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG) | [Java] |
 | 1008 | [A/B](https://www.acmicpc.net/problem/1008) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20IV.PNG) | [Java] |
 | 1018 | [체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) | [2](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20V.PNG) | [Java] |
+| 1085 | [직사각형에서 탈출](https://www.acmicpc.net/problem/1085) | [2](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG) | [Java] |
 | 1152 | [단어의 개수](https://www.acmicpc.net/problem/1152) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG) | [Java] |
 | 1157 | [단어 공부](https://www.acmicpc.net/problem/1157) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20I.PNG) | [Java] |
 | 1330 | [두 수 비교하기](https://www.acmicpc.net/problem/1330) | [1](https://solved.ac/search?query=in_class:1) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20IV.PNG) | [Java] |
