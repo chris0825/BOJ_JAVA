@@ -3,8 +3,8 @@
 
 <details open> <summary> 접기 / 펼치기 </summary>
   
-| ID | Question | CLASS | RANK | Code |
-|:-:|:-:|:-:|:-|:-:|
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 1000 | [A+B](https://www.acmicpc.net/problem/1000) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)](https://github.com/chris0825/BOJ_JAVA/blob/main/Math/1000.java) |
 | 1001 | [A-B](https://www.acmicpc.net/problem/1001) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white)](https://github.com/chris0825/BOJ_JAVA/blob/main/Math/1001.java) |
 | 1003 | [피보나치 함수](https://www.acmicpc.net/problem/1003) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [-] |
