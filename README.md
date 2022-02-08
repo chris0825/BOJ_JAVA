@@ -1,7 +1,7 @@
 [![BOJ](https://github.com/chris0825/BOJ_JAVA/blob/main/images/boj_logo.png)](https://www.acmicpc.net)
 ============================
 
-<details open> <summary> 접기 / 펼치기 </summary>
+<details open> <summary> JAVA 코드 </summary>
   
 | ID | Question | CLASS | RANK | Code | Review |
 |:-:|:-:|:-:|:-|:-:|:-:|
