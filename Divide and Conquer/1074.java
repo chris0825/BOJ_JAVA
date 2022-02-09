@@ -14,27 +14,25 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer init = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(init.nextToken());
-        int c = Integer.parseInt(init.nextToken());
         int r = Integer.parseInt(init.nextToken());
-        System.out.println(zSearch(c, r, n));
+        int c = Integer.parseInt(init.nextToken());
+        System.out.println(zSearch(r, c, (int)Math.pow(2, n)));
     }
-    static int zSearch(int c, int r, int n) {
-        int size = (int)Math.pow(2, n);
-        int cMfy = 0, rMfy = 0;
-        int ans = 0;
+    static int zSearch(int r, int c, int size) {
+        int rMfy = 0, cMfy = 0, ans = 0;
         while(size != 1) {
-            if(c >= size/2+cMfy && r >= size/2+rMfy) { // 우하
+            if(r >= size/2+rMfy && c >= size/2+cMfy) { // 우하
                 ans += size*size/4*3;
-                rMfy += size/2;
                 cMfy += size/2;
+                rMfy += size/2;
             }
-            else if(c < size/2+cMfy && r >= size/2+rMfy) { // 우상
+            else if(r < size/2+rMfy && c >= size/2+cMfy) { // 우상
                 ans += size*size/4;
-                rMfy += size/2;
-            }
-            else if(c >= size/2+cMfy && r < size/2+rMfy) { // 좌하
-                ans += size*size/2;
                 cMfy += size/2;
+            }
+            else if(r >= size/2+rMfy && c < size/2+cMfy) { // 좌하
+                ans += size*size/2;
+                rMfy += size/2;
             }
             size /= 2;
         }
