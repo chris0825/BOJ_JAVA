@@ -1,5 +1,5 @@
 /**
-  백준 5430번 - AC (Parsing VER.)
+  백준 5430번 - AC (Deque VER.)
   https://www.acmicpc.net/problem/5430
   
   알고리즘 분류
