@@ -1,5 +1,5 @@
 /**
-  백준 1152번 - 단어의 개수
+  백준 1152번 - 단어의 개수 (StringTokenizer VER.)
   https://www.acmicpc.net/problem/1152
   
   알고리즘 분류
@@ -7,16 +7,12 @@
     2. 문자열
 */
 import java.util.*;
+import java.io.*;
 
 public class Main{
-    public static void main(String args[]){
-        Scanner input = new Scanner(System.in);
-        int cnt=0;
-        String temp;
-        while(input.hasNext()){
-            temp = input.next();
-            cnt++;
-        }
-        System.out.println(cnt);
+    public static void main(String[] args) throws IOException{
+    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    	StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+    	System.out.println(st.countTokens());
     }
 }
