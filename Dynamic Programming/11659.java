@@ -16,14 +16,14 @@ public class Main {
         int n = Integer.parseInt(st.nextToken());
         int t = Integer.parseInt(st.nextToken());
         int numList[] = new int[n+1];
-        StringTokenizer stNum = new StringTokenizer(br.readLine());
+        st = new StringTokenizer(br.readLine());
         for(int i=1; i<=n; i++)
-            numList[i] = numList[i-1] + Integer.parseInt(stNum.nextToken());
+            numList[i] = numList[i-1] + Integer.parseInt(st.nextToken());
         int i, j;
         while(t-- > 0) {
-            StringTokenizer section = new StringTokenizer(br.readLine());
-            i = Integer.parseInt(section.nextToken()) - 1;
-            j = Integer.parseInt(section.nextToken());
+            st = new StringTokenizer(br.readLine());
+            i = Integer.parseInt(st.nextToken()) - 1;
+            j = Integer.parseInt(st.nextToken());
             bw.write(numList[j] - numList[i]+"\n");
         }
         bw.close();
