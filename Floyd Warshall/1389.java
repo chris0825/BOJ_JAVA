@@ -15,16 +15,15 @@ public class Main {
     static int user, relation[][];
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer init = new StringTokenizer(br.readLine());
-        user = Integer.parseInt(init.nextToken());
-        int rNum = Integer.parseInt(init.nextToken());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        user = Integer.parseInt(st.nextToken());
+        int rNum = Integer.parseInt(st.nextToken());
         relation = new int[user+1][user+1];
         for(int i=0; i<=user; i++) {
             Arrays.fill(relation[i], 1000);
             relation[i][i] = 0;
         }
         int a, b;
-        StringTokenizer st;
         while(rNum-- > 0) {
             st = new StringTokenizer(br.readLine());
             a = Integer.parseInt(st.nextToken());
