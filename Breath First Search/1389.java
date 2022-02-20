@@ -34,30 +34,22 @@ public class Main {
             bfs(i);
         System.out.println(minKB[0]);
     }
-    static class KB {
-        int v;
-        int cnt;
-        KB (int vertex, int count) {
-            this.v = vertex;
-            this.cnt = count;
-        }
-    }
     static void bfs(int sV) {
-        Queue<KB> queue = new LinkedList<>();
-        queue.add(new KB(sV, 0));
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(sV);
         boolean visited[] = new boolean[user+1];
         visited[sV] = true;
         int distance[] = new int[user+1];
         Arrays.fill(distance, 1000);
         distance[sV] = 0;
-        KB v;
+        int v;
         while(!queue.isEmpty()) {
             v = queue.remove();
-            for(int i : relation[v.v]) {
+            for(int i : relation[v]) {
                 if(!visited[i]) {
                     visited[i] = true;
-                    distance[i] = v.cnt;
-                    queue.add(new KB(i, v.cnt+1));
+                    distance[i] = distance[v]+1;
+                    queue.add(i);
                 }
             }
         }
