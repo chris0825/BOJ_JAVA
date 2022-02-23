@@ -26,31 +26,31 @@ public class Main {
     }
     static String bfs(int a, int b) {
         Queue<Integer> queue = new LinkedList<>();
-        String command[] = new String[10000];
         queue.add(a);
+        String command[] = new String[10000];
         command[a] = "";
-        int temp, d, s, l, r;
+        int dslr, d, s, l, r;
         while(!queue.isEmpty() && command[b] == null) {
-            temp = queue.remove();
-            d = (temp * 2) % 10000;
-            s = temp == 0 ? 9999 : temp-1;
-            l = temp % 1000 * 10 + temp / 1000;
-            r = temp % 10 * 1000 + temp / 10;
+            dslr = queue.remove();
+            d = (dslr * 2) % 10000;
             if(command[d] == null) {
+                command[d] = command[dslr] + "D";
                 queue.add(d);
-                command[d] = command[temp] + "D";
             }
+            s = dslr == 0 ? 9999 : dslr-1;
             if(command[s] == null) {
+                command[s] = command[dslr] + "S";
                 queue.add(s);
-                command[s] = command[temp] + "S";
             }
+            l = dslr % 1000 * 10 + dslr / 1000;
             if(command[l] == null) {
+                command[l] = command[dslr] + "L";
                 queue.add(l);
-                command[l] = command[temp] + "L";
             }
+            r = dslr % 10 * 1000 + dslr / 10;
             if(command[r] == null) {
+                command[r] = command[dslr] + "R";
                 queue.add(r);
-                command[r] = command[temp] + "R";
             }
         }
         return command[b];
