@@ -10,37 +10,36 @@ import java.io.*;
 
 public class Main {
     static String data[][];
-    static int size;
     static StringBuilder sb = new StringBuilder();
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        size = Integer.parseInt(br.readLine());
-        if(size == 1)
-            System.out.println(br.readLine());
+        int size = Integer.parseInt(br.readLine());
+        data = new String[size][size];
+        for(int i=0; i<size; i++)
+            data[i] = br.readLine().split("");
+        zip(0, 0, size);
+        System.out.println(sb);
+    }
+    static void zip(int row, int col, int unit) {
+        if(unit < 2)
+            sb.append(data[row][col]);
         else {
-            data = new String[size][size];
-            for(int i=0; i<size; i++)
-                data[i] = br.readLine().split("");
-            zip(0, 0, size);
-            System.out.println(sb);
+            if(!isEqual(row, col, unit)) {
+                sb.append("(");
+                for(int i=row; i<row+unit; i+=unit/2)
+                    for(int j=col; j<col+unit; j+=unit/2)
+                        zip(i, j, unit/2);
+                sb.append(")");
+            }
+            else
+                sb.append(data[row][col]);
         }
     }
-    static void zip(int col, int row, int unit) {
-        if(unit < 2)
-            sb.append(data[col][row]);
-        else {
-            for(int i=col; i<col+unit; i++)
-                for(int j=row; j<row+unit; j++)
-                    if(!data[col][row].equals(data[i][j])) {
-                        sb.append("(");
-                        zip(col, row, unit/2);
-                        zip(col, row+unit/2, unit/2);
-                        zip(col+unit/2, row, unit/2);
-                        zip(col+unit/2, row+unit/2, unit/2);
-                        sb.append(")");
-                        return;
-                    }
-            sb.append(data[col][row]);
-        }
+    static boolean isEqual(int row, int col, int unit) {
+        for(int i=row; i<row+unit; i++)
+            for(int j=col; j<col+unit; j++)
+                if(data[row][col].charAt(0) != data[i][j].charAt(0))
+                    return false;
+        return true;
     }
 }
