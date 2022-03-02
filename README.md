@@ -131,3 +131,8 @@
 | 18870 | [좌표 압축](https://www.acmicpc.net/problem/18870) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20II.PNG)](https://solved.ac/problems/level/9) | [Sort](https://github.com/chris0825/BOJ_JAVA/blob/main/Sort/18870.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/133)
 
 </details>
+
+<details>
+<summary> Python 코드 </summary>
+  
+</details>
