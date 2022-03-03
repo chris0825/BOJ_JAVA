@@ -21,9 +21,6 @@ public class Main {
         System.out.println(sb);
     }
     static int plus123(int n) {
-        if(dp[n] != 0)
-            return dp[n];
-        else
-            return dp[n] = plus123(n-1) + plus123(n-2) + plus123(n-3);
+        return dp[n] != 0 ? dp[n] : (dp[n] = plus123(n-1) + plus123(n-2) + plus123(n-3));
     }
 }
