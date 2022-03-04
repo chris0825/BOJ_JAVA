@@ -12,16 +12,15 @@ import java.io.*;
 public class Main {
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+        int size = Integer.parseInt(br.readLine());
+        int time[] = new int[size];
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int time[] = new int[n];
-        for(int i=0; i<n; i++)
+        for(int i=0; i<size; i++)
             time[i] = Integer.parseInt(st.nextToken());
         Arrays.sort(time);
         int sum = 0;
-        for(int i=0; i<n; i++)
-            for(int j=0; j<=i; j++)
-                sum += time[j];
+        for(int i=0; i<size; i++)
+            sum += time[i]*(size-i);
         System.out.println(sum);
     }
 }
