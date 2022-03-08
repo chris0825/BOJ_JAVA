@@ -2,14 +2,14 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-    static int rSize, cSize, angler = 0, sea[][];
+    static int rSize, cSize, angler = 0, sea[][], ans = 0;
     static HashMap<Integer, Shark> shark = new HashMap<>();
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        rSize = Integer.parseInt(st.nextToken())+1;
-        cSize = Integer.parseInt(st.nextToken())+1;
-        sea = new int[rSize][cSize];
+        rSize = Integer.parseInt(st.nextToken());
+        cSize = Integer.parseInt(st.nextToken());
+        sea = new int[rSize+1][cSize+1];
         int sNum = Integer.parseInt(st.nextToken());
         Shark s;
         for(int i=1; i<=sNum; i++) {
@@ -19,9 +19,16 @@ public class Main {
             sea[s.r][s.c] = i;
         }
         while(!shark.isEmpty()) {
+            for(int i=1; i<=rSize; i++) {
+                for(int j=1; j<=cSize; j++)
+                    System.out.print(sea[i][j]+" ");
+                System.out.println();
+            }
+            System.out.println("=================================");
             fishing();
             move();
         }
+        System.out.println(ans);
     }
     static class Shark implements Comparable<Shark>{
         int r;
@@ -44,73 +51,93 @@ public class Main {
     static void fishing() {
         if(angler < cSize)
             angler++;
-        for(int i=1; i<rSize; i++)
-            if(sea[angler][i] != 0) {
-                shark.remove(sea[angler][i]);
-                sea[angler][i] = 0;
+        for(int i=1; i<=rSize; i++)
+            if(sea[i][angler] != 0) {
+                System.out.println("Eating "+sea[i][angler]);
+                ans += shark.get(sea[i][angler]).z;
+                shark.remove(sea[i][angler]);
+                sea[i][angler] = 0;
                 return;
             }
     }
     static void move() {
-        int after[][] = new int[rSize][cSize];
+        int after[][] = new int[rSize+1][cSize+1];
+        ArrayList<Integer> del = new ArrayList<>();
         int len, spot = 0;
         Shark s;
         for(int key : shark.keySet()) {
             s = shark.get(key);
+            System.out.println("d= "+s.d);
             switch(s.d) {
                 case 1: // 상
-                    len = rSize-1;
-                    spot = s.r - 1 - s.s % ((len-1)*2);
-                    if(spot >= 0)
+                    spot = s.s % ((rSize-1)*2);
+                    if(spot < s.r)
                         s.r -= spot;
                     else {
-                        s.r = (spot + s.r - 1)*(-1);
-                        s.d = 2;
+                        s.r = spot - s.r + 2;
+                        if(s.r > rSize)
+                            s.r = rSize - (spot - rSize);
+                        else
+                            s.d = 2;
                     }
                     break;
                 case 2: // 하
-                    len = rSize-1;
-                    spot = len - s.r - s.s % ((len-1)*2);
-                    if(spot >= 0)
+                    spot = s.s % ((rSize-1)*2);
+                    if(spot <= rSize - s.r)
                         s.r += spot;
                     else {
-                        s.r = (spot - len + s.r)*(-1);
+                        s.r = rSize - (spot - rSize + s.r);
                         s.d = 1;
                     }
                     break;
                 case 3: // 우
-                    len = cSize-1;
-                    spot = len - s.c - s.s % ((len-1)*2);
-                    if(spot >= 0)
+                    spot = s.s % ((cSize-1)*2);
+                    if(spot <= cSize - s.c)
                         s.c += spot;
                     else {
-                        s.c = (spot - len + s.c)*(-1);
-                        s.d = 4;
+                        s.c = spot - cSize + s.c;
+                        if(s.c > cSize)
+                            s.c = spot - cSize + 1;
+                        else
+                            s.d = 4;
                     }
                     break;
                 case 4: // 좌
-                    len = cSize-1;
-                    spot = s.c - 1 - s.s % ((len-1)*2);
-                    if(spot >= 0)
+                    spot = s.s % ((cSize-1)*2);
+                    if(spot < s.c)
                         s.c -= spot;
                     else {
-                        s.c = (spot + s.c - 1)*(-1);
-                        s.d = 3;
+                        s.c = spot - s.c + 2;
+                        if(s.c < 0)
+                            s.c = spot - (s.c-1 + cSize);
+                        else
+                            s.d = 3;
+                        System.out.println("d= "+s.d);
                     }
                     break;
             }
-            System.out.println(s.d+" "+spot);
-            if(after[s.r][s.c] == 0)
+            System.out.println(key);
+            if(after[s.r][s.c] == 0) {
                 shark.put(key, s);
+                after[s.r][s.c] = key;
+            }
             else {
                 if(shark.get(after[s.r][s.c]).z > s.z)
-                    shark.remove(key);
+                    del.add(key);
                 else {
-                    shark.remove(after[s.r][s.c]);
-                    sea[s.r][s.c] = key;
+                    del.add(after[s.r][s.c]);
+                    after[s.r][s.c] = key;
                 }
             }
+            for(int i=1; i<=rSize; i++) {
+                for(int j=1; j<=cSize; j++)
+                    System.out.print(after[i][j]+" ");
+                System.out.println();
+            }
+            System.out.println();
         }
+        while(!del.isEmpty())
+            shark.remove(del.remove(0));
         sea = after;
     }
 }
