@@ -1,3 +1,10 @@
+/**
+    백준 1436번 - 영화감독 숌
+    https://www.acmicpc.net/problem/1436
+    
+    알고리즘 분류
+        1. 브루트포스 알고리즘
+*/
 import java.util.*;
 
 public class Main {
