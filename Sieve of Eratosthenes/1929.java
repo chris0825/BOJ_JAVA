@@ -13,9 +13,10 @@ import java.io.*;
 
 public class Main {
     public static void main(String args[]) throws IOException{
-        Scanner input = new Scanner(System.in);
-        int m = input.nextInt();
-        int n = input.nextInt();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int m = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(st.nextToken());
         boolean pN[] = new boolean[n+1];
         pN[1] = true;
         for(int i=2; i*i<=n; i++)
