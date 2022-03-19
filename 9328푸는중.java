@@ -14,14 +14,14 @@ public class Main {
             boolean key[] = new boolean[26];
             ArrayList<int[]> doc = new ArrayList<>();
             ArrayList<int[]> door = new ArrayList<>();
-            String map[] = new String[r];
+            String map[][] = new String[r][c];
             for(int i=0; i<r; i++) {
-                map[i] = br.readLine();
+                map[i] = br.readLine().split("");
                 for(int j=0; j<c; j++) {
-                    if(map[i].charAt(j) == '$') 
+                    if(map[i][j].charAt(0) == '$') 
                         doc.add(new int[]{i, j});
                     else if(i == 0 || j == 0 || i == r-1 || j == c-1)
-                        if(map[i].charAt(j) == '.')
+                        if(map[i][j].charAt(0) == '.')
                             door.add(new int[]{i, j});
                 }
             }
@@ -31,57 +31,63 @@ public class Main {
                     key[haveK.charAt(i)-'a'] = true;
         }
     }
-    static void findK(String map[], boolean key[], ArrayList<int[]> doc, ArrayList<int[]> door) {
+    static ArrayList<int[]> unlock[] = new ArrayList[26];
+    // 새로운 문 또는 문서 찾는 함수
+    static void explorer(ArrayList<int[]> doc, ArrayList<int[]> door, boolean key[], String map[][]) {
         Queue<int[]> q = new LinkedList<>();
         for(int start[] : door)
             q.add(start);
         boolean visited[][] = new boolean[r][c];
         for(int i=0; i<r; i++)
             for(int j=0; j<c; j++)
-                if(map[i].charAt(j) == '*')
+                if(map[i][j].charAt(0) == '*')
                     visited[i][j] = true;
-        ArrayList<Chracter> key = new ArrayList<>();
         int a[];
         while(!q.isEmpty()) {
             a = q.poll();
             visited[a[0]][a[1]] = true;
             if(a[0]+1 < r) {
-                if(map[a[0]+1].charAt(a[1]) == '.')
+                if(map[a[0]+1][a[1]].charAt(0) == '.')
                     q.add(new int[]{a[0]+1, a[1]});
-                else if(map[a[0]+1].charAt(a[1]) >= 'a')
-                    key[map[a[0]+1].charAt(a[1])-'a'] = true;
-                else if(key[map[a[0]+1].charAt(a[1])-'A']) {
-                    map[a[0]+1].charAt(a[1]) = '.';
+                else if(map[a[0]+1][a[1]].charAt(0) >= 'a')
+                    key[map[a[0]+1][a[1]].charAt(0)-'a'] = true;
+                else if(key[map[a[0]+1][a[1]].charAt(0)-'A']) {
+                    map[a[0]+1][a[1]] = ".";
                     q.add(new int[]{a[0]+1, a[1]});
                 }
+                else
+                    unlock.add(new int[]{a[0]+1, a[1]});
             }
             if(a[0]-1 >= 0) {
-                if(map[a[0]-1].charAt(a[1]) == '.')
+                if(map[a[0]-1][a[1]].charAt(0) == '.')
                     q.add(new int[]{a[0]-1, a[1]});
-                else if(map[a[0]-1].charAt(a[1]) >= 'a')
-                    key[map[a[0]-1].charAt(a[1])-'a'] = true;
-                else if(key[map[a[0]-1].charAt(a[1])-'A'])
+                else if(map[a[0]-1][a[1]].charAt(0) >= 'a')
+                    key[map[a[0]-1][a[1]].charAt(0)-'a'] = true;
+                else if(key[map[a[0]-1][a[1]].charAt(0)-'A'])
                     q.add(new int[]{a[0]-1, a[1]});
+                else
+                    unlock.add(new int[]{a[0]-1, a[1]});
             }
             if(a[1]+1 < c) {
-                if(map[a[0]].charAt(a[1]+1) == '.')
+                if(map[a[0]][a[1]+1].charAt(0) == '.')
                     q.add(new int[]{a[0], a[1]+1});
-                else if(map[a[0]].charAt(a[1]+1) >= 'a')
-                    key[map[a[0]].charAt(a[1]+1)-'a'] = true;
-                else if(key[map[a[0]].charAt(a[1]+1)-'A'])
+                else if(map[a[0]][a[1]+1].charAt(0) >= 'a')
+                    key[map[a[0]][a[1]+1].charAt(0)-'a'] = true;
+                else if(key[map[a[0]][a[1]+1].charAt(0)-'A'])
                     q.add(new int[]{a[0], a[1]+1});
+                else
+                    unlock.add(new int[]{a[0], a[1]+1});
             }
             if(a[1]-1 >= 0) {
-                if(map[a[0]].charAt(a[1]-1) == '.')
+                if(map[a[0]][a[1]-1].charAt(0) == '.')
                     q.add(new int[]{a[0], a[1]-1});
-                else if(map[a[0]].charAt(a[1]-1) >= 'a')
-                    key[map[a[0]].charAt(a[1]-1)-'a'] = true;
-                else if(key[map[a[0]].charAt(a[1]-1)-'A'])
+                else if(map[a[0]][a[1]-1].charAt(0) >= 'a')
+                    key[map[a[0]][a[1]-1].charAt(0)-'a'] = true;
+                else if(key[map[a[0]][a[1]-1].charAt(0)-'A'])
                     q.add(new int[]{a[0], a[1]-1});
+                else
+                    unlock.add(new int[]{a[0], a[1]-1});
             }
-        }
-        if(key.size() != 0) {
-            findK();
         }
     }
 }
