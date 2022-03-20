@@ -3,7 +3,9 @@
 
 <details>
 <summary> JAVA 코드 </summary>
-  
+<details>
+<summary> 1000 ~ 1999 </summary>
+
 | ID | Question | CLASS | RANK | Code | Review |
 |:-:|:-:|:-:|:-|:-:|:-:|
 | 1000 | [A+B](https://www.acmicpc.net/problem/1000) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [Math](https://github.com/chris0825/BOJ_JAVA/blob/main/Math/1000.java) |
@@ -40,6 +42,13 @@
 | 1966 | [프린터 큐](https://www.acmicpc.net/problem/1966) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG) | [Java] |
 | 1978 | [소수 찾기](https://www.acmicpc.net/problem/1978) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG) | [Java] |
 | 1992 | [쿼드트리](https://www.acmicpc.net/problem/1992) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20I.PNG)](https://solved.ac/problems/level/10) | [Divide and Conquer](https://github.com/chris0825/BOJ_JAVA/blob/main/Divide%20and%20Conquer/1992.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/148)
+</details>
+
+<details>
+<summary> 2000 ~ 2999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 2108 | [통계학](https://www.acmicpc.net/problem/2108) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG) | [Java] |
 | 2164 | [카드2](https://www.acmicpc.net/problem/2164) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG) | [Java] |
 | 2178 | [미로 탐색](https://www.acmicpc.net/problem/2178) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20I.PNG)](https://solved.ac/problems/level/10) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/2178.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/91)
@@ -70,23 +79,79 @@
 | 2884 | [알람 시계](https://www.acmicpc.net/problem/2884) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20III.PNG)](https://solved.ac/problems/level/3) | [Java] |
 | 2908 | [상수](https://www.acmicpc.net/problem/2908) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG)](https://solved.ac/problems/level/4) | [Java] |
 | 2920 | [음계](https://www.acmicpc.net/problem/2920) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG)](https://solved.ac/problems/level/4) | [Java] |
+</details>
+
+<details>
+<summary> 3000 ~ 3999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 3052 | [나머지](https://www.acmicpc.net/problem/3052) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG)](https://solved.ac/problems/level/4) | [Java] |
+</details>
+
+<details>
+<summary> 4000 ~ 4999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 4153 | [직각삼각형](https://www.acmicpc.net/problem/4153) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20III.PNG) | [Java] |
 | 4949 | [균형잡힌 세상](https://www.acmicpc.net/problem/4949) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG) | [Java] |
+</details>
+
+<details>
+<summary> 5000 ~ 5999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 5430 | [AC](https://www.acmicpc.net/problem/5430) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20V.PNG)](https://solved.ac/problems/level/11) | [Data Structure(Deque)](https://github.com/chris0825/BOJ_JAVA/blob/main/Data%20Structure/5430_Deque.java)</br> [Parsing](https://github.com/chris0825/BOJ_JAVA/blob/main/Parsing/5430.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/129)
 | 5525 | [IOIOI](https://www.acmicpc.net/problem/5525) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20II.PNG)](https://solved.ac/problems/level/9) | [String](https://github.com/chris0825/BOJ_JAVA/blob/main/String/5525_String%20Compare.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/139)
+</details>
+
+<details>
+<summary> 6000 ~ 6999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 6064 | [카잉 달력](https://www.acmicpc.net/problem/6064) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20I.PNG)](https://solved.ac/problems/level/10) | [Java] | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)]
+</details>
+
+<details>
+<summary> 7000 ~ 7999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 7568 | [덩치](https://www.acmicpc.net/problem/7568) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20V.PNG) | [Java] |
 | 7569 | [토마토](https://www.acmicpc.net/problem/7569) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20V.PNG)](https://solved.ac/problems/level/11) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/7569.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/119)
 | 7576 | [토마토](https://www.acmicpc.net/problem/7576) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20V.PNG)](https://solved.ac/problems/level/11) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/7576.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/102)
 | 7662 | [이중 우선순위 큐](https://www.acmicpc.net/problem/7662) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20V.PNG)](https://solved.ac/problems/level/11) | [Data Structure(TreeMap)](https://github.com/chris0825/BOJ_JAVA/blob/main/Data%20Structure/7662_TreeMap.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/138)
+</details>
+
+<details>
+<summary> 8000 ~ 8999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 8958 | [OX퀴즈](https://www.acmicpc.net/problem/8958) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG)](https://solved.ac/problems/level/4) | [Java] |
+</details>
+
+<details>
+<summary> 9000 ~ 9999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 9012 | [괄호](https://www.acmicpc.net/problem/9012) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG) | [Java] |
 | 9019 | [DSLR](https://www.acmicpc.net/problem/9019) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20IV.PNG)](https://solved.ac/problems/level/12) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/9019.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/137)
 | 9095 | [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [Dynamic Programming](https://github.com/chris0825/BOJ_JAVA/blob/main/Dynamic%20Programming/9095.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/150)
 | 9375 | [패션왕 신해빈](https://www.acmicpc.net/problem/9375) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [Data Structure(HashMap)](https://github.com/chris0825/BOJ_JAVA/blob/main/Data%20Structure/9375_HashMap.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/136)
 | 9461 | [파도반 수열](https://www.acmicpc.net/problem/9461) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [Dynamic Programming](https://github.com/chris0825/BOJ_JAVA/blob/main/Dynamic%20Programming/9461.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/106)
 | 9498 | [시험성적](https://www.acmicpc.net/problem/9498) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20IV.PNG)](https://solved.ac/problems/level/2) | [Java] |
+</details>
+
+<details>
+<summary> 10000 ~ 10999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 10026 | [적록색약](https://www.acmicpc.net/problem/10026) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20V.PNG)](https://solved.ac/problems/level/11) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/10026.java)</br> [Depth First Search(Stack](https://github.com/chris0825/BOJ_JAVA/blob/main/Depth%20First%20Search/10026_Stack.java) [, Recursion)](https://github.com/chris0825/BOJ_JAVA/blob/main/Depth%20First%20Search/10026_Recursion.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/120)
 | 10171 | [고양이](https://www.acmicpc.net/problem/10171) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [Java] |
 | 10172 | [개](https://www.acmicpc.net/problem/10172) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [Java] |
@@ -106,6 +171,13 @@
 | 10952 | [A+B - 5](https://www.acmicpc.net/problem/10952) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20III.PNG)](https://solved.ac/problems/level/3) | [Java] |
 | 10989 | [수 정렬하기 3](https://www.acmicpc.net/problem/10989) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20V.PNG) | [Java] |
 | 10998 | [AxB](https://www.acmicpc.net/problem/10998) | [![1](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%201.PNG)](https://solved.ac/search?query=in_class:1) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20V.PNG)](https://solved.ac/problems/level/1) | [Java] |
+</details>
+
+<details>
+<summary> 11000 ~ 11999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 11047 | [동전 0](https://www.acmicpc.net/problem/11047) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [Greedy](https://github.com/chris0825/BOJ_JAVA/blob/main/Greedy/11047.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/151)
 | 11050 | [이항 계수 1](https://www.acmicpc.net/problem/11050) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20I.PNG) | [Java] |
 | 11279 | [최대 힙](https://www.acmicpc.net/problem/11279) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20II.PNG)](https://solved.ac/problems/level/9) | [Data Structure(Priority Queue)](https://github.com/chris0825/BOJ_JAVA/blob/main/Data%20Structure/11279_PriorityQueue_Reverse.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/116)
@@ -122,12 +194,61 @@
 | 11726 | [2xn 타일링](https://www.acmicpc.net/problem/11726) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [Dynamic Programming](https://github.com/chris0825/BOJ_JAVA/blob/main/Dynamic%20Programming/11726.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/93)
 | 11727 | [2xn 타일링 2](https://www.acmicpc.net/problem/11727) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20III.PNG)](https://solved.ac/problems/level/8) | [Dynamic Programming](https://github.com/chris0825/BOJ_JAVA/blob/main/Dynamic%20Programming/11727.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/155)
 | 11866 | [요세푸스 문제 0](https://www.acmicpc.net/problem/11866) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG) | [Java] |
+</details>
+
+<details>
+<summary> 12000 ~ 12999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
+</details>
+
+<details>
+<summary> 13000 ~ 13999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
+</details>
+
+<details>
+<summary> 14000 ~ 14999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 14500 | [테트로미노](https://www.acmicpc.net/problem/14500) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20V.PNG)](https://solved.ac/problems/level/11) | [Brute Force](https://github.com/chris0825/BOJ_JAVA/blob/main/Brute%20Force/14500.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/122)
+</details>
+
+<details>
+<summary> 15000 ~ 15999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 15829 | [Hashing](https://www.acmicpc.net/problem/15829) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Bronze%20II.PNG) | [Java] |
+</details>
+
+<details>
+<summary> 16000 ~ 16999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 16236 | [아기 상어](https://www.acmicpc.net/problem/16236) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Gold%20III.PNG)](https://solved.ac/problems/level/13) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/16236.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/130)
 | 16928 | [뱀과 사다리 게임](https://www.acmicpc.net/problem/16928) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20I.PNG)](https://solved.ac/problems/level/10) | [Breath First Search](https://github.com/chris0825/BOJ_JAVA/blob/main/Breath%20First%20Search/16928.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/146)
+</details>
+
+<details>
+<summary> 17000 ~ 17999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 17219 | [비밀번호 찾기](https://www.acmicpc.net/problem/17219) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG)](https://solved.ac/problems/level/7) | [Data Structure(HashMap)](https://github.com/chris0825/BOJ_JAVA/blob/main/Data%20Structure/17219_HashMap.java) |
 | 17626 | [Four Squares](https://www.acmicpc.net/problem/17626) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20IV.PNG)](https://solved.ac/problems/level/7) | [Dynamic Programming</br> & Brute Force](https://github.com/chris0825/BOJ_JAVA/blob/main/Dynamic%20Programming/17626.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/140)
+</details>
+
+<details>
+<summary> 18000 ~ 18999 </summary>
+
+| ID | Question | CLASS | RANK | Code | Review |
+|:-:|:-:|:-:|:-|:-:|:-:|
 | 18111 | [마인크래프트](https://www.acmicpc.net/problem/18111) | [![2](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%202.PNG)](https://solved.ac/search?query=in_class:2) | ![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20II.PNG) | [Java] |
 | 18870 | [좌표 압축](https://www.acmicpc.net/problem/18870) | [![3](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Class%203.PNG)](https://solved.ac/search?query=in_class:3) | [![LEVEL](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Silver%20II.PNG)](https://solved.ac/problems/level/9) | [Sort](https://github.com/chris0825/BOJ_JAVA/blob/main/Sort/18870.java) | [![blog](https://github.com/chris0825/BOJ_JAVA/blob/main/images/Code%20Review%20icon.PNG)](https://kwin0825.tistory.com/133)
 
