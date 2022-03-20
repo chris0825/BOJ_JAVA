@@ -2,47 +2,49 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
+    static int cnt = 0, n, s, num[];
     public static void main(String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int nNum = Integer.parseInt(st.nextToken());
-        int s = Integer.parseInt(st.nextToken());
-        st = new StringTokenizer(br.readLine());
-        arr = new long[nNum];
-        for(int i=0; i<nNum; i++)
-            arr[i] = Integer.parseInt(st.nextToken());
-        subSum(s, 0, nNum/2, subL);
-        subSum(s, nNum/2, nNum, subR);
+        String input[] = br.readLine().split(" ");
+        n = Integer.parseInt(input[0]);
+        s = Integer.parseInt(input[1]);
+        input = br.readLine().split(" ");
+        num = new int[n];
+        for(int i=0; i<n; i++)
+            num[i] = Integer.parseInt(input[i]);
+        Arrays.sort(num);
+        ArrayList<Long> subL = new ArrayList<>();
+        ArrayList<Long> subR = new ArrayList<>();
+        subL.add(0L);
+        subR.add(0L);
+        sub(0, n/2, 0, subL);
+        sub(n/2, n, 0, subR);
         Collections.sort(subL);
         Collections.sort(subR);
-        int l = 0, r = subR.size()-1, subCnt = 0, subLCnt, subRCnt;
         long sum;
+        int l = 0, r = subR.size()-1;
         while(l < subL.size() && r >= 0) {
             sum = subL.get(l) + subR.get(r);
-            if(s == sum) {
-                subLCnt = subRCnt = 1;
-                while(l < subL.size()-1 && subL.get(l) == subL.get(++l))
-                    subLCnt++;
-                while(r > 0 && subR.get(r) == subR.get(--r))
-                    subRCnt++;
-                subCnt += subLCnt * subRCnt;
-            }
-            else if(s > sum)
-                l++;
-            else
+            if(sum == s)
+                cnt++;
+            if(sum > s)
                 r--;
+            else
+                l++;
         }
-        System.out.println(s == 0 ? subCnt-1 : subCnt);
+        System.out.println(s == 0 ? cnt-1 : cnt);
     }
-    static long arr[];
-    static ArrayList<Long> subL = new ArrayList<>();
-    static ArrayList<Long> subR = new ArrayList<>();
-    static void subSum(long s, int start, int end, ArrayList<Long> sub) {
-        if(start == end) {
-            sub.add(s);
+    static void sub(int idx, int end, long sum, ArrayList<Long> sub) {
+        if(idx == end)
             return;
-        }
-        subSum(s, start+1, end, sub);
-        subSum(s+arr[start], start+1, end, sub);
+        sub(idx+1, end, sum, sub);
+        sub.add(sum+num[idx]);
+        sub(idx+1, end, sub.get(sub.size()-1), sub);
     }
 }
+
+/**
+32 1000000
+100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000 -100000
+답 : 129024480
+*/
